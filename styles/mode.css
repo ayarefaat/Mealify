@@ -1,0 +1,232 @@
+:root{
+    --dark-color:#252525;
+    --black-color:#171717;
+    --white-color:#fff;
+    --dark-main-color:#c17e1f;
+    --dark-grey-color: #37373f;
+    --light-grey-color:#9f9f9f
+}
+:target{
+    header{
+        background-color: var(--dark-color);
+        nav{
+            background-color: var(--black-color);;
+            .navbar{
+                .logo{
+                    h1{
+                        a{
+                            color: var(--white-color);
+
+                            span{
+                                color: var(--dark-main-color);
+                            }
+                        }
+                    }
+                }
+                .nav-links{
+                    ul{
+                        li{
+                           a{
+                            &::after{
+                                background-color: var(--dark-main-color);
+                                }
+                            &.active,&:hover{
+                                color: var(--white-color);
+                            }
+                           }
+                        }
+                    }
+                }
+                .modes{
+                    button{
+                        a{
+                           &.light{
+                            display: inline-block;
+                            color: var(--white-color);
+                           }
+                           &.dark{
+                            display: none;
+                           }
+                        }
+                    }
+                }
+                .menu{
+                    display: none;
+                    button{
+                        a{
+                            color: var(--white-color);
+                            font-size: 25px;
+                            line-height: 34px;
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            .row{
+                .item-1{
+                    h2{
+                        color: var(--white-color);
+                    }
+                    p{
+                        color: var(--light-grey-color);
+                    }
+                    .btn-group{
+                         div.button{
+                            a.book{
+                                color: #000;
+                                font-weight: 300;
+                                background-color: var(--dark-main-color);
+                                &:hover{
+                                    background-color: hsl( 35, 72%, calc(44% + 5%) );;
+                                }
+                            }
+                         }
+                    }
+                    div.youtube{
+                        div.icon{
+                            background: linear-gradient(90deg,var(--dark-main-color) 50%, transparent 50%);
+                            a.play{
+                                color: var(--white-color);
+                                background-color: var(--black-color);
+                            }
+                        }
+                        div.watch{
+                            a{
+                                color: var(--white-color);
+                            }
+                        }
+                        &:hover div.icon a.play,&:hover div.watch a {
+                            color: var(--dark-main-color);
+                        }
+                       }
+                }
+                .item-2{
+                    width: 40%;
+                    img{
+                        filter: drop-shadow(4px 4px 9px #000a);
+                    }
+                }
+            }
+        }
+    }
+    section.chefs{
+        background-color: #202020;
+        div.title{
+            h2{
+                color: var(--white-color);
+            }p{
+                color: var(--white-color);
+                span{
+                    color: var(--dark-main-color);
+                }
+            }
+        }
+        .cards{
+            .card-item{
+                .inner{
+                    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+                    div.image{
+                        &::before{
+                            background-image: url('../imgs/team-shape-dark.svg');
+                        }
+                    }
+                    .card-content{
+                        border-radius: 10px ;
+                        -webkit-border-radius: 10px ;
+                        -moz-border-radius: 10px ;
+                        -ms-border-radius: 10px ;
+                        -o-border-radius: 10px ;
+                        h3{
+                            color: var(--white-color);
+                        }
+                        background-color: var(--black-color);
+                        
+                    }
+                }
+            }
+        }
+    }
+    section.gallery{
+        background-color: var(--dark-color);
+        div.title{
+            h2{
+                color: var(--white-color);
+            }p{
+                color: var(--white-color);
+                span{
+                    color: var(--dark-main-color);
+                }
+            }
+        }
+    }
+    section.contact{
+        background-color: #202020;
+        div.title{
+            h2{
+                color: var(--white-color);
+            }p{
+                color: var(--white-color);
+                span{
+                    color: var(--dark-main-color);
+                }
+            }
+        }
+        .item{
+           .details{
+             background-color: #0d0d0d;
+             .icon{
+                span{
+                    color: #0d0d0d;
+                    background-color: var(--dark-main-color);
+                }
+             }
+             .info{
+                p{
+                    color: var(--white-color);
+                }
+            }
+           }
+        }
+        form{
+            background-color: #171717;
+            input,textarea{
+                background-color: var(--white-color);
+                &:focus{
+                    border-color: var(--dark-main-color);
+                }
+            }
+            button{
+                background-color: var(--dark-main-color);
+                &:hover{
+                    background-color: hsl(35, 72%, calc(44% + 5%));;
+                }
+            }
+        }
+    }
+    footer{
+        .row{
+            .subscribe{
+                .input{
+                    button{
+                        background-color: var(--dark-main-color) ;
+                        color: #000;
+                        &:hover{
+                            background-color: hsl(35, 72%, calc(44% + 5%));;
+                        }
+                    }
+                }
+            }
+        }
+        .get-in-touch{
+           ul{
+            li{
+                span{
+                    color: var(--dark-main-color);
+                }
+            }
+           }
+        }
+    }
+ 
+}

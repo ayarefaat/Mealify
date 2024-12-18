@@ -1,0 +1,173 @@
+@media(max-width:1399.9px ){
+    section.gallery{
+        .row{
+            height: 1050px;
+        }
+    }
+}
+@media(max-width: 1199.98px){
+    header{
+        nav{
+            .navbar{
+                .nav-links ul{
+                    display: none;
+                }
+                .modes{
+                    margin-left: auto;
+                    margin-right: 10px;
+                }
+            }
+            .menu{
+                display: inline-block !important;
+            }
+            .menu-links{
+                visibility: visible;
+            }
+        }
+    }
+  section.gallery{
+    .row{
+        height: 910px;
+    }
+  }
+  footer{
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .mealify{
+            width: 50%;
+        }
+        .subscribe{
+            width: 100%;
+            order: 2;
+        }
+        .get-in-touch{
+            width: 50%;
+            order: 1;
+        }
+    }
+}
+}
+@media (max-width: 991.98px) {
+    header{
+        height: auto;
+    }
+    .content{
+        .row{
+            flex-direction: column-reverse;
+            gap: 30px;
+            
+            .item-1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80% !important;
+                text-align: center !important;
+
+                .btn-group{
+                    div.button{
+                        a.book{
+                            border-radius: 25px !important;
+                            -webkit-border-radius: 25px !important;
+                            -moz-border-radius: 25px !important;
+                            -ms-border-radius: 25px !important;
+                            -o-border-radius: 25px !important;
+}
+                    }
+                }
+            }
+            .item-2{
+                width: 80% !important;
+            }
+        }
+    }
+    section.chefs{
+        .cards{
+            flex-wrap: wrap;
+            .card-item{
+                width: calc(100% / 2);
+            }
+        }
+    }
+    section.gallery{
+        .row{
+            height: 1617px;
+            flex-wrap: wrap;
+            .photo{
+                width: calc(100% / 2);
+            }
+            .burger{
+                order: 1;
+            }
+            .pizza-slices{
+                order: 2;
+            }
+            .frittata{
+                order: 3;
+            }
+            .steak{
+                order: 4;
+            }
+            .chicken{
+                order: 5;
+            }
+            .kebab{
+                order: 6;
+            }
+        }
+      }
+}
+@media (max-width: 767.98px){
+    section.chefs{
+        .cards{
+            flex-wrap: wrap;
+            .card-item{
+                width: 100%;
+            }
+        }
+    }
+   section.gallery{
+    .row{
+        height: auto;
+        .photo{
+            width: 100%;
+        }
+    }
+   }
+   section.contact{
+    .row{
+        .item{
+            width: 100%;
+        }
+    }
+    form{
+        .input-group{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            input{
+                width: 100%;
+            }
+        }
+    }
+   }
+   footer{
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .mealify{
+            width: 100%;
+        }
+        .subscribe{
+            width: 100%;
+            /* order: 2; */
+        }
+        .get-in-touch{
+            width: 100%;
+            /* order: 1; */
+        }
+    }
+}
+}
